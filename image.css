@@ -1,0 +1,10 @@
+.aboutus .img img{
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	shape-outside: circle();
+
+}

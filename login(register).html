@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login and register</title>
+	<link rel="stylesheet" type="text/css" href="login(register).css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="header&footer.css">
+		<style>
+@font-face {
+    font-family: 'DS_DIGIB';
+    src: url('../fonts/DS-DIGIB.ttf') format('truetype');
+}
+
+.digi_clock{
+	font-family: 'Orbitron', sans-serif;
+    font-size: 150px;
+}
+.digi_clock span{
+	display: inline-block;
+}
+#second{
+	width: 250px;
+}
+#ampm{
+	font-family: 'Orbitron', sans-serif;
+	font-size: 60%;
+	font-weight: 700;
+
+}
+</style>
+</head>
+<body>
+	<!--Header Section-->
+<header>
+<nav>
+<div class="wrapper">
+		<div class="logo"><a href="#"><h1>SMC</h1></a></div>
+		<input type="radio" name="slider" id="menu-btn">
+		<input type="radio" name="slider" id="cancel-btn">
+		<ul class="nav-links">
+			<label for="cancel-btn" class="btn cancel-btn"><i class="fa fa-times"></i></label>
+			<div id="digiClock"></div>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<li><a href="#" class="Desktop-item">Product</a>
+					<input type="checkbox" id="Showdrop">
+				<label for="Showdrop" class="Mobile-item">Product</label>
+				<ul class="product">
+					<li><a href="#">Mobiles</a></li>
+					<li><a href="#">Accessories</a></li>
+					<li><a href="#">Others</a></li>
+				</ul>
+			</li>
+			<li><a href="services.html">Service</a>
+				
+			<li><a href="#" class="Desktop-item">Help center</a>
+					<input type="checkbox" id="ShowDrop">
+				<label for="ShowDrop" class="Mobile-item">Help Center</label>
+				<ul class="help-center">
+					<li><a href="contactus.html">Contact Us</a></li>
+					<li><a href="#">Your Order</a></li>
+					<li><a href="feedback.html">Feedback</a></li>
+					<li><a href="visitus">Visit Us</a></li>
+				</ul>
+			</li>
+			<li><a href="searchbar.html"><i class="fa fa-search"></i>&nbsp Search</a></li>
+			<li><a href="login(register.html)"><i class="fa fa-sign-in">&nbsp Login/Register</i></a></li>
+			<li><a href="#"><i class="fa fa-shopping-cart">&nbsp Cart</i></a></li>
+		</ul>
+		<label for="menu-btn" class="btn menu-btn"><i class="fa fa-bars"></i></label>
+	</div> 
+</nav>
+</header>
+<br>
+<br>
+<br><br>
+	<div class="form">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+			</div>
+		<form id="login" class="input-group" action="login.php" method="post">
+			<input type="text" class="input-field" name="name" placeholder="&nbsp Username" value="" required>
+			<input type="Password" class="input-field" name="password" placeholder="&nbsp Enter Password" value="" required>
+			<button type="submit" class="submit-btn" name="submit">Log In</button>
+		</form>
+		<form id="register" class="input-group" action="register.php" method="post">
+			<input type="text" class="input-field" placeholder="&nbsp Username" name="name" required>
+			<input type="Email" class="input-field" placeholder="&nbsp Email Id" required name="email">
+			<input type="Password" class="input-field" placeholder="&nbsp Enter Password" required name="password">
+			<button type="submit" class="submit-btn" name="submit">Register</button>
+		</form>
+	</div>
+	</div>
+<!-------------------------------------------footer section-->
+<a href="#" class="gototop"><i class="fa fa-arrow-up"></i></a>
+<section class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col">
+					<h4>About Us</h4>
+					<p id="#p"><strong>Shivani Mobile Center </strong>is a wholesale store that provides its customers mobiles phones and its connections, accessories, recharges and it also help you to get finance for your wish listed products too.<a href="#aboutus">Read More</a></p>
+				</div>
+				<div class="footer-col">
+					<h4>Get help</h4>
+					<ul>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">shipping</a></li>
+						<li><a href="#">returns</a></li>
+						<li><a href="#">order status</a></li>
+						<li><a href="#">payment options</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Contact Us</h4>
+					<ul>
+						<li>
+							<i class="fa fa-map-marker" aria-hidden="true">&nbsp Sohawal Chauraha,Faizabad (Ayodhaya)</i>
+						</li>
+						<li>
+							<i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+917607381953">+91 7607381953</a>
+						</li>
+					<li>
+						<i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:shivanimobilecenter.206@gmail.com">shivanimobilecenter.206@gmail.com</a>
+					</li>
+				</ul>
+
+				</div>
+				
+				<div class="footer-col">
+					<h4>Follow us</h4>
+					<div class="social-links">
+						<a href="https://www.facebook.com/profile.php?id=100059824461142/"><i class="fa fa-facebook"></i></a>
+						<a href="https://www.instagram.com/invites/contact/?i=ywo3345je8zj&utm_content=klkgep4"><i class="fa fa-instagram"></i></a>
+						<a href="https://www.whatsapp.com/download/"><i class="fa fa-whatsapp"></i></a>
+					</div>
+				</div>
+				<br><br>
+				<div class="footer-col">
+					<div class="Developer"><a href="profile.html"> <h3>Website Developer</h3>Click here</a></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="copyright">
+			<p>copyright &#169 2021 Shivani Mobile Center. All Right Reserved.</p>
+		</div>
+	</footer>
+	<!---------clock javascript----------->
+<script type="text/javascript">
+	digiClock = document.getElementById('digiClock');
+
+function digitalClock(){
+	date = new Date()
+	//date.setHours(date.getHours() + 3);
+	getHours = date.getHours();
+	var ampm = (getHours >= 12) ? "PM" : "AM";
+	getHours = date.getHours() % 12 || 12;
+	getMinutes = date.getMinutes();
+	getSeconds = date.getSeconds();
+
+	if(getHours < 10){
+		getHours = "0"+getHours
+	}
+	if(getMinutes < 10){
+		getMinutes = "0"+getMinutes
+	}
+	if(getSeconds < 10){
+		getSeconds = "0"+getSeconds
+	}
+
+	ClockView = "<span>"+getHours + "</span>:<span>"+getMinutes+"</span>:<span id='second'>"+getSeconds+"</span>"+"<span id='ampm'>  "+ampm+"</span>";
+	digiClock.innerHTML= ClockView
+	setTimeout(digitalClock,1000)
+}
+digitalClock()
+</script>
+<!------------end clock javascript---------->
+	<script>
+		var x=document.getElementById("login");
+		var y=document.getElementById("register");
+		var z=document.getElementById("btn");
+		function register() {
+			x.style.left="-400px";
+			y.style.left="50px";
+			z.style.left="110px";
+		}
+		function login() {
+			x.style.left="50px";
+			y.style.left="450px";
+			z.style.left="0";
+		}
+	</script>
+</body>
+</html>

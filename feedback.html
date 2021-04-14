@@ -1,0 +1,207 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <title></title>
+  <!-- CSS only -->
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<link rel="stylesheet" type="text/css" href="header&footer.css">
+<link rel="stylesheet" type="text/css" href="feedback.css">
+<style>
+@font-face {
+    font-family: 'DS_DIGIB';
+    src: url('../fonts/DS-DIGIB.ttf') format('truetype');
+}
+
+.digi_clock{
+  font-family: 'Orbitron', sans-serif;
+    font-size: 150px;
+}
+.digi_clock span{
+  display: inline-block;
+}
+#second{
+  width: 250px;
+}
+#ampm{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 60%;
+  font-weight: 700;
+
+}
+</style>
+ </head>
+ <body>
+  <!--Header Section-->
+<header>
+<nav>
+<div class="wrapper">
+    <div class="logo"><a href="#"><h1>SMC</h1></a></div>
+    <input type="radio" name="slider" id="menu-btn">
+    <input type="radio" name="slider" id="cancel-btn">
+    <ul class="nav-links">
+      <label for="cancel-btn" class="btn cancel-btn"><i class="fa fa-times"></i></label>
+      <div id="digiClock"></div>
+
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="#" class="Desktop-item">Product</a>
+          <input type="checkbox" id="Showdrop">
+        <label for="Showdrop" class="Mobile-item">Product</label>
+        <ul class="product">
+          <li><a href="#">Mobiles</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Others</a></li>
+        </ul>
+      </li>
+      <li><a href="services.html">Service</a>
+        
+      <li><a href="#" class="Desktop-item">Help center</a>
+          <input type="checkbox" id="ShowDrop">
+        <label for="ShowDrop" class="Mobile-item">Help Center</label>
+        <ul class="help-center">
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="#">Your Order</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="visitus.html">Visit Us</a></li>
+        </ul>
+      </li>
+      <li><a href="searchbar.html"><i class="fa fa-search"></i>&nbsp Search</a></li>
+      <li><a href="login(register).html"><i class="fa fa-sign-in">&nbsp Login/Register</i></a></li>
+      <li><a href="#"><i class="fa fa-shopping-cart">&nbsp Cart</i></a></li>
+    </ul>
+    <label for="menu-btn" class="btn menu-btn"><i class="fa fa-bars"></i></label>
+  </div> 
+</nav>
+</header>
+<br>
+<br>
+<br><br>
+<section>
+<h1 align="center">Customer Feedback</h1>
+   <div class="box">
+
+    <div class="post">
+      <div class="text">Thanks for rating us!</div>
+      <div class="edit">Edit</div>
+    </div>
+     <div class="star-widget">
+      <input type="radio" name="rate" id="rate-5"><label for="rate-5" class="fa fa-star "></label>
+      <input type="radio" name="rate" id="rate-4"><label for="rate-4" class="fa fa-star"></label>
+      <input type="radio" name="rate" id="rate-3"><label for="rate-3" class="fa fa-star"></label>
+      <input type="radio" name="rate" id="rate-2"><label for="rate-2" class="fa fa-star"></label>
+      <input type="radio" name="rate" id="rate-1"><label for="rate-1" class="fa fa-star"></label>
+      <br><br>
+       <form action="#">
+         <div class="textarea">
+           <textarea cols="30" placeholder="Describe your experience..."></textarea>
+         </div>
+          <div class="btn">
+           <button type="submit">Post </button>
+         </div>
+       </form>
+     </div>
+   </div>
+</section>
+   <!-------------------------------------------footer section-->
+   <a href="#" class="gototop"><i class="fa fa-arrow-up"></i></a>
+<section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>About Us</h4>
+          <p id="#p"><strong>Shivani Mobile Center </strong>is a wholesale store that provides its customers mobiles phones and its connections, accessories, recharges and it also help you to get finance for your wish listed products too.<a href="#aboutus">Read More</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>
+              <i class="fa fa-map-marker" aria-hidden="true">&nbsp Sohawal Chauraha,Faizabad (Ayodhaya)</i>
+            </li>
+            <li>
+              <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+917607381953">+91 7607381953</a>
+            </li>
+          <li>
+            <i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:shivanimobilecenter.206@gmail.com">shivanimobilecenter.206@gmail.com</a>
+          </li>
+        </ul>
+
+        </div>
+        
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100059824461142/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/invites/contact/?i=ywo3345je8zj&utm_content=klkgep4"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.whatsapp.com/download/"><i class="fa fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <br><br>
+        <div class="footer-col">
+          <div class="Developer"><a href="profile.html"> <h3>Website Developer</h3>Click here</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="copyright">
+      <p>copyright &#169 2021 Shivani Mobile Center. All Right Reserved.</p>
+    </div>
+  </footer>
+<!---------clock javascript----------->
+<script type="text/javascript">
+  digiClock = document.getElementById('digiClock');
+
+function digitalClock(){
+  date = new Date()
+  //date.setHours(date.getHours() + 3);
+  getHours = date.getHours();
+  var ampm = (getHours >= 12) ? "PM" : "AM";
+  getHours = date.getHours() % 12 || 12;
+  getMinutes = date.getMinutes();
+  getSeconds = date.getSeconds();
+
+  if(getHours < 10){
+    getHours = "0"+getHours
+  }
+  if(getMinutes < 10){
+    getMinutes = "0"+getMinutes
+  }
+  if(getSeconds < 10){
+    getSeconds = "0"+getSeconds
+  }
+
+  ClockView = "<span>"+getHours + "</span>:<span>"+getMinutes+"</span>:<span id='second'>"+getSeconds+"</span>"+"<span id='ampm'>  "+ampm+"</span>";
+  digiClock.innerHTML= ClockView
+  setTimeout(digitalClock,1000)
+}
+digitalClock()
+</script>
+<!------------end clock javascript---------->
+        <script type="text/javascript">
+          const btn=document.querySelector("button");
+          const post=document.querySelector(".post");
+          const widget=document.querySelector(".star-widget");
+          const editBtn=document.querySelector(".edit");
+          btn.onclick=()=>{
+            widget.style.display ="none";
+            post.style.display ="block";
+           editBtn.onclick=()=>{
+            widget.style.display ="block";
+            post.style.display ="none";
+          }
+            return false;
+          }
+        </script>
+ </body>
+ </html>
